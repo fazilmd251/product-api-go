@@ -17,8 +17,9 @@ func main() {
 
 	log.Println("Database connected succesfully")
 
-	if err := startServer(); err != nil {
+	if err := startServer(database); err != nil {
 		log.Fatalf("Error starting server %v", err)
 	}
 
 }
+
